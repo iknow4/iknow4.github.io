@@ -29,8 +29,10 @@ tags:
 * [Googleapis](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html)
 [![webp-android-backport](/static/post-image/webp2.png)](/static/post-image/webp2.png)
 [![webp-android-backport](/static/post-image/webp3.png)](/static/post-image/webp3.png)
+
 ## 3. 编译
 下载源码后放置到工程目录/jni，进行编译，如图
+
 [![webp-android-backport](/static/post-image/webp4.png)](/static/post-image/webp4.png)
 
 > 认真看了开源项目源码后发现，这样编译出来的aar库其实是有bug的,尴尬😓
@@ -38,6 +40,7 @@ tags:
 如图：
 
 [![webp-android-backport](/static/post-image/webp5.png)](/static/post-image/webp5.png)
+
 为了解决该bug，我们需要将接口类中私有API定义成public，方便上层使用。这里的修改涉及到jni的编译了，期间我也碰到了一些比较坑的问题。(这里我会用另一篇博客来详细说明)
 在编译so库的时候，可以修改webp-android-backport-library包下面的Application.mk文件中APP_ABI 参数，来指定项目需要支持的cpu架构平台。
 
