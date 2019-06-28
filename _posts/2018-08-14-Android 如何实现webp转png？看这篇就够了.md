@@ -133,8 +133,8 @@ if (Webp2PngUtil.isWebpImage(new File(originalImagePath))) {
 由于aar中包含了webp的so库，而且这个so库其实不小(随着webp的源码越来越多，编译后的so库也在不断的增大)，考虑到APP包的size，支持的cpu架构也不能太多。
 
 #### **极好的参考资料**
-### 1. [http://www.geekince.com/android/2017/07/31/android-webp-build/](http://www.geekince.com/android/2017/07/31/android-webp-build/)
+##### 1. [http://www.geekince.com/android/2017/07/31/android-webp-build/](http://www.geekince.com/android/2017/07/31/android-webp-build/)
 
-### 2. [http://www.hahack.com/wiki/sundries-webp.html](http://www.hahack.com/wiki/sundries-webp.html)
+##### 2. [http://www.hahack.com/wiki/sundries-webp.html](http://www.hahack.com/wiki/sundries-webp.html)
 
 
