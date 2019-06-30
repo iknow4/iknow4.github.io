@@ -1,5 +1,5 @@
 ---
-title: "Jekyll之Rake脚本介绍"
+title: "Jekyll之Rake脚本一键生成文章模版"
 layout: post
 category: post
 tags: 
