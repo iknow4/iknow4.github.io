@@ -122,11 +122,11 @@ public class Webp2PngUtil {
 
 ```java
 if (Webp2PngUtil.isWebpImage(new File(originalImagePath))) {
-    String pngImagePath = Webp2PngUtil.bitmap2Png(Webp2PngUtil.webp2Bitmap(originalImagePath));
-    if (!TextUtils.isEmpty(pngImagePath)) {
-      originalImagePath = pngImagePath;
-    }
+  String pngImagePath = Webp2PngUtil.bitmap2Png(Webp2PngUtil.webp2Bitmap(originalImagePath));
+  if (!TextUtils.isEmpty(pngImagePath)) {
+    originalImagePath = pngImagePath;
   }
+}
 ```
 
 实现这样的需求还是比较容易，主要的精力可以会消耗在aar库的编译上。

@@ -17,9 +17,10 @@ Rake其实就是Ruby的一个工程构建工具，诸如Makefile、CMake, Qt的q
 * 支持并行task
 
 在Jekyll博客搭建完成后，在写博客的过程中发现每次创建博文的时候很不方便，在网上查找下相关方面的资料，发现其实是可以使用Rake脚本来实现的。
-[关于rake](https://github.com/ruby/rake)
 
-#### 使用 gem 下载安装Rake
+#### [关于Rake](https://github.com/ruby/rake)
+
+#### 使用gem下载安装Rake
 
 > gem install rake
 
@@ -60,7 +61,7 @@ task :post do
 end # task :post
 ```
 ok，脚本添加成功后，我们就可以使用rake来创建博客了。 
-来一个测试，那就用 Hello World 来测试下。
+来一个测试，那就用 Hello World 来测试下。在Jekyll的根目录，打开终端后键入：
 
 > rake post title="hello world"
 
@@ -68,5 +69,5 @@ ok，脚本添加成功后，我们就可以使用rake来创建博客了。
 
 [![rake](/static/post-image/rake.png)](/static/post-image/rake.png)
 
-我是用Visual Studio Code来编辑博文的，通过Rakefile,现在就可以很轻松的实现一键生成Jekyll文章模版了。
+我是用Visual Studio Code来编辑博文的，通过Rakefile, 现在就可以很轻松的实现一键生成Jekyll文章模版了。
 
